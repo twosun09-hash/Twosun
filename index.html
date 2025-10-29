@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>30-40대 초심자를 위한 최신 트렌디 골프 강의</title>
+<!-- Tailwind CDN (간단 데모용) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* 간단한 애니메이션 & 카드 스타일 보완 */
+.card { transition: transform .15s ease, box-shadow .15s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<header class="max-w-6xl mx-auto p-6">
+<div class="flex items-center justify-between">
+<h1 class="text-2xl sm:text-3xl font-extrabold">최신 트렌디 골프 강사 영상</h1>
+<p class="text-sm text-gray-600">대상: 30~40대 골프를 배우고 싶은 분들</p>
+</div>
+<p class="mt-2 text-gray-600">초보자 친화적 강의, 필드 팁, 스윙 리듬 교정 등 최신 강의들을 모아 보여주는 인터랙티브 목록입니다.</p>
+</header>
+
+
+<main class="max-w-6xl mx-auto p-6">
+<!-- Controls -->
+<section class="mb-6 flex flex-col sm:flex-row sm:items-center sm:gap-4">
+<input id="search" type="search" placeholder="강사/주제 검색 (예: 퍼팅, 드라이브)" class="flex-1 p-3 rounded-lg border border-gray-200 shadow-sm" />
+
+
+<select id="level" class="mt-3 sm:mt-0 p-3 rounded-lg border border-gray-200 shadow-sm w-48">
+<option value="all">모든 레벨</option>
+<option value="beginner">초보자</option>
+<option value="intermediate">중급</option>
+<option value="advanced">고급</option>
+</select>
+
+
+<select id="sort" class="mt-3 sm:mt-0 p-3 rounded-lg border border-gray-200 shadow-sm w-48">
+<option value="newest">최신순</option>
+<option value="popular">인기순</option>
+<option value="short">짧은 영상 순</option>
+</select>
+
+
+<button id="reset" class="mt-3 sm:mt-0 ml-auto p-3 bg-indigo-600 text-white rounded-lg shadow-sm">초기화</button>
+</section>
+
+
+<!-- Video grid -->
+<section id="videos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+
+
+<!-- Empty state -->
+<div id="empty" class="hidden text-center text-gray-500 mt-8">조건에 맞는 영상이 없습니다.</div>
+</main>
+
+
+<footer class="max-w-6xl mx-auto p-6 text-sm text-gray-500">
+<p>이 페이지는 예시 템플릿입니다. 실제 최신 영상은 YouTube API 또는 원하는 플랫폼의 데이터로 교체하여 사용하세요.</p>
+</footer>
+
+
+<script>
+// ---------- 샘플 데이터 ----------
+// 실제로는 YouTube Data API나 서버에서 최신 목록을 받아와서 넣으세요.
+const sampleVideos = [
+{
+id: 'dQw4w9WgXcQ', // 예시 YouTube ID (치환 필요)
+title: '초보자를 위한 5분 퍼팅 레슨 — 쉽게 따라하는 루틴',
+instructor: '김프로',
+level: 'beginner',
+duration: '5:12',
+</html>
